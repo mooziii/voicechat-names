@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "voicechatnamesaddon",
-  "version": "${version}",
+  "version": "1.1.0",
   "name": "Voice Chat Group Names",
   "description": "Adds player names to group overlay in Simple Voice Chat!",
   "authors": [

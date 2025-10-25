@@ -30,7 +30,7 @@ public class MixinGroupChatManager {
     ) {
         guiGraphics.pose().pushMatrix();
         guiGraphics.pose().scale(0.5F, 0.5F);
-        guiGraphics.drawString(mc.font, state.getName(), (posX < 0 ? -9 : 1) + 22, (posY < 0 ? -9 : 1) + 8 - mc.font.lineHeight / 2, -1);
+        guiGraphics.drawString(mc.font, state.getName(), (posX < 0 ? -23 - mc.font.width(state.getName()) : 23), (posY < 0 ? -9 - 8 + mc.font.lineHeight / 2 : 1 + 8 - mc.font.lineHeight / 2) , -1);
         guiGraphics.pose().popMatrix();
     }
 }
