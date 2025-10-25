@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "voicechatnamesaddon",
+  "version": "${version}",
+  "name": "Voice Chat Group Names",
+  "description": "Adds player names to group overlay in Simple Voice Chat!",
+  "authors": [
+    "MooZiii"
+  ],
+  "license": "GNU GPL 3.0",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.github.mooziii.voicechatnamesaddon.GroupNamesAddonClient"
+    ]
+  },
+  "mixins": [
+    "voicechatnamesaddon.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": ">=1.21.8",
+    "voicechat": "*"
+  }
+}
